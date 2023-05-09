@@ -1,0 +1,259 @@
+body{
+	background:rgb(245, 252, 186);
+}
+h1{
+	text-align: center;
+	font-family: "beastly", sans-serif;
+
+	font-weight: 400;
+	font-style: normal;
+	font-size: 5rem;
+	color:rgb(255, 101, 142);
+	margin-top: 3%;
+	
+}
+img{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:500px;
+}
+
+.container, .container2{
+	position:absolute;
+	top:50%;
+	left:calc(50% - 110px);
+	transform:translate(-50%,-50%);
+	height:320px;
+	width:320px;
+
+}
+.container2{
+	left:calc(50% + 110px);
+}
+.swaddle {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:100%;
+	width:62%;
+
+	border-radius:999px;
+	overflow:hidden;
+	box-shadow:15px 10px 0px rgba(0,0,0,0.1);
+}
+
+
+.swaddle.boy{
+	background:rgb(210, 250, 254);
+	
+}
+.swaddle.girl{
+	background:rgb(250, 212, 246);
+}
+.sRight, .sLeft{
+	position:absolute;
+	top:85%;
+	left:80%;
+	transform:translate(-50%,-50%) rotate(-30deg);
+	width: 150%;
+	height:70%;
+/* 	border:2px solid green; */
+	
+}
+.sLeft{
+	left:20%;
+	transform:translate(-50%,-50%) rotate(30deg);
+}
+.sRight.boy{
+	background:rgb(156,244,254);
+}
+.sLeft.boy{
+	background:rgb(193,248,255);
+}
+.sRight.girl{
+	background:rgb(254,156,244);
+}
+.sLeft.girl{
+	background:rgb(254,193,248);
+}
+.head{
+	position:absolute;
+	top:27.5%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:44%;
+	width:74%;
+/* 	border:2px solid greenyellow; */
+	border-radius:100%;
+	background:rgb(255,208,188);
+}
+/* .hairL, .hairR, .hairM{
+	position:absolute;
+	top:11%;
+	left:50%;
+	transform:rotate(20deg) translate(-50%,-50%);
+	height:22%;
+	width:22%;
+	border-left:5px solid rgba(125, 88, 69, 0.485);
+	border-radius:100px;
+}
+.hairL{
+	left:46%;
+	height:24%;
+	width:22%;
+}
+.hairR{
+	left:54%;
+	top:18%;
+	transform:rotate(36deg) translate(-50%,-50%);
+}
+.hairM{
+	transform:rotate(28deg) translate(-50%,-50%);
+	top:13%;
+	left:50%;
+	height:27%;
+	width:23%;
+} */
+.earL, .earR{
+	position:absolute;
+	top:50%;
+	left:0%;
+	transform:translate(-50%,-50%);
+	height:12%;
+	width:12%;
+/* 	border:2px solid greenyellow; */
+	border-radius:1000px;
+	background:rgb(255,208,188);
+}
+.earR {
+	left:100%;
+}
+.eyeL, .eyeR{
+	position:absolute;
+	top:39%;
+	left:29%;
+	transform:translate(-50%,-50%);
+	height:7%;
+	width:7%;
+/* 	border:2px solid steelblue; */
+	border-radius:100%;
+	background:rgb(65,65,65);
+}
+.eyeR{
+	left:71%;
+}
+.eyeR.boy,.eyeL.boy{
+	animation:5s blink linear infinite;
+}
+.eyeR.girl,.eyeL.girl{
+	animation:6.7s blink linear infinite;
+}
+.nose{
+	position:absolute;
+	top:52%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:4%;
+/* 	border:2px solid steelblue; */
+	width:10%;
+	border-radius:1000px 1000px 0 0;
+	background:rgb(230,171,141);
+}
+.cheekL, .cheekR{
+	position:absolute;
+	top:64%;
+	left:22%;
+	transform:translate(-50%,-50%);
+	height:15%;
+	width:15%;
+	/* 	border:2px solid tan; */
+	border-radius:1000px;
+	background: rgb(255, 117, 144);
+}
+.cheekR{
+	left:80%;
+}
+.binkieBG{
+	position:absolute;
+	top:71%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:19%;
+	width:29%;
+/* 	border:2px solid tan; */
+	border-radius:20%;
+	background:rgb(255,162,100);
+}
+.binkieRing{
+	position:absolute;
+	top:83%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:27%;
+	width:27%;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border:5px solid rgb(175, 251, 125);
+	border-radius:100%;
+}
+.binkieCircle{
+	position:absolute;
+	top:71%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:12%;
+	width:12%;
+/* 	border:2px solid tan; */
+	border-radius:100%;
+	background: rgb(255,180,130);
+}
+
+.h3{
+	text-align: center;
+	font-family: "beastly", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 5rem;
+	color:rgb(0, 0, 0);
+	
+}
+
+/* ------------textbox------ */
+
+.baby-text {
+	background-color: #d5fdd7;
+	border: 5px solid #bbffbd;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #91fcea;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 15px;
+	color: black;
+	text-align: center;
+	margin-right: 2%;
+	margin-left:2%;
+	margin-bottom: 2%;
+	font-family: 'Playfair Display', serif;
+  }
+
+  /* --------background */
+
+*{box-sizing:border-box;}
+
+.heart{
+   position:fixed;
+   top:-1vh;
+   transform:translateY(0);
+   animation:rain 3s linear forwards;
+   font-size:2rem;
+}
+
+@keyframes rain{
+   to{
+      transform:translateY(105vh);
+   }
+}
